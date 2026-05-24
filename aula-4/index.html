@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nome da Pagina-->
+    <title>Desafio Pratico</title>
+    <!--Tag para linkar o arquivo HTML com o arquivo CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Titulo da Pagina-->
+    <h1>Calculadora IES</h1>
+        <!--Div que contem a calculadora-->
+        <div class="calculadora">
+            <h2>Resultado</h2>
+            <!--Tag que mostra o resultado da calculadora-->
+            <p>0</p>
+            <!--Tabela que contem os botoes da calculadora-->
+            <table>
+                <!--Linhas e colunas da tabela-->
+                <tr>
+                    <!--Botoes da calculadora com a funcao onclick que chama as funcoes do arquivo JS-->
+                    <td><button class="botao" onclick="limpar()">C</button></td>
+                    <td><button class="botao" onclick="limparUltimo()"><</button></td>
+                    <td><button class="botao" onclick="incluir('/')">/</button></td>
+                    <td><button class="botao" onclick="incluir('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incluir(7)">7</button></td>
+                    <td><button class="botao" onclick="incluir(8)">8</button></td>
+                    <td><button class="botao" onclick="incluir(9)">9</button></td>
+                    <td><button class="botao" onclick="incluir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incluir(4)">4</button></td>
+                    <td><button class="botao" onclick="incluir(5)">5</button></td>
+                    <td><button class="botao" onclick="incluir(6)">6</button></td>
+                    <td><button class="botao" onclick="incluir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="incluir(1)">1</button></td>
+                    <td><button class="botao" onclick="incluir(2)">2</button></td>
+                    <td><button class="botao" onclick="incluir(3)">3</button></td>
+                    <!--DICA: Rowspan serve para a celula ocupar o tamanho de 2 linhas-->
+                    <td rowspan="2"><button class="botao" id="igual" onclick="igual()">=</button></td>
+                </tr>
+                <tr>
+                    <!--DICA: Colspan serve para a celula ocupar o tamanho de 2 colunas-->
+                    <td colspan="2"><button class="botao" id="zero" onclick="incluir(0)">0</button></td>
+                    <td><button class="botao" onclick="incluir('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    <!--Tag para linkar o arquivo HTML com o arquivo JS-->
+    <script src="script.js"></script>
+</body>
+</html>
