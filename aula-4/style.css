@@ -1,0 +1,49 @@
+/*Classe para definir o estilo da calculadora*/
+.calculadora{
+    background-color: #c9c9d4cb;
+    padding: 10px;
+    border: 2px solid #ff9100;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+
+/*Classe para definir o estilo do visor da calculadora reaproveitando as caracteristicas da classe calculadora*/
+.calculadora p{
+    font-size: 1.5em;
+    border: 1px solid #000000;
+    background-color: white;
+    /*DICA: TRBL = Top, Right, Bottom, Left | esse padrão segue o sentido horário*/
+    padding: 7px 0 7px 3px;
+    margin: 10px 0 15px 0;
+}
+
+/*Classe para definir o estilo dos botões da calculadora*/
+.botao{
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    border: 1px solid #ff9100;
+    border-radius: 5px;
+    background-color: #f99a1e;
+}
+
+/*Classe para definir o estilo dos botões da calculadora quando o mouse estiver sobre ele*/
+.botao:hover{
+    background-color: #fcaf4b;
+}
+
+/*ID para definir o estilo do botão 0*/
+#zero{
+    width: 145px;
+}
+
+/*ID para definir o estilo do botão igual*/
+#igual{
+    height: 145px;
+}
+
+/*Alinhamento do título da página*/
+h1, h2{
+    text-align: center;
+}
